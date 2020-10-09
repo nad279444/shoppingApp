@@ -1,6 +1,5 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
-import { Entypo } from "@expo/vector-icons";
 
 export default function Payment() {
   return (
@@ -26,7 +25,10 @@ export default function Payment() {
       <View style={styles.direction}>
         <Text style={styles.previous}>previous</Text>
         <View style={styles.icon}>
-          <Entypo name="dots-three-horizontal" size={15} color="#b0a8a7" />
+          <View style={styles.round}></View>
+          <View style={styles.round}></View>
+          <View style={styles.rectangle}></View>
+          
         </View>
       </View>
     </View>
@@ -78,9 +80,29 @@ const styles = StyleSheet.create({
   },
 
   icon: {
-    marginLeft: 100,
+    marginLeft: 80,
+    flexDirection: 'row',
+    marginTop: 10
   },
   previous: {
     color: "#b0a8a7",
+  
   },
+  round: {
+    width: 8,
+    height: 8,
+    backgroundColor: '#372854',
+    borderRadius: 8,
+    borderColor: 'black',
+    marginLeft: 2
+    
+  },
+  rectangle: {
+    width: 14,
+    height: 8,
+    backgroundColor: '#372854',
+    borderRadius: 5,
+    borderColor: 'black',
+    marginLeft: 2
+  }
 });
