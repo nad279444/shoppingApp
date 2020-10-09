@@ -35,7 +35,6 @@ export default function OnlineShopping() {
           <View style={styles.rectangle}></View>
           <View style={styles.round}></View>
           <View style={styles.round}></View>
-          
         </View>
         <Text style={styles.skip}>skip</Text>
       </View>
@@ -91,25 +90,24 @@ const styles = StyleSheet.create({
     color: "#b0a8a7",
   },
   icon: {
-    marginLeft: 150,
-    flexDirection: 'row',
-    marginTop: 10
+    marginLeft: 140,
+    flexDirection: "row",
+    marginTop: 10,
   },
   round: {
     width: 8,
     height: 8,
-    backgroundColor: '#372854',
+    backgroundColor: "#372854",
     borderRadius: 8,
-    borderColor: 'black',
-    marginLeft: 2
-    
+    borderColor: "black",
+    marginLeft: 2,
   },
   rectangle: {
     width: 14,
     height: 8,
-    backgroundColor: '#372854',
+    backgroundColor: "#372854",
     borderRadius: 5,
-    borderColor: 'black',
-    marginLeft: 2
-  }
+    borderColor: "black",
+    marginLeft: 2,
+  },
 });
